@@ -1,0 +1,11 @@
+{% extends 'tracker/base.html' %}
+
+{% block body %}
+<ul>
+    {% for todo in all_todos %}
+        <li> <a href = "{% url 'tracker:index' %}"> {{ todo.description }}</a></li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
