@@ -1,10 +1,6 @@
-from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views import generic
-from django.views.generic import View
 from .models import Todo
-from django.http import HttpResponse
-from django.template import loader
 from django.core.urlresolvers import reverse_lazy
 
 
